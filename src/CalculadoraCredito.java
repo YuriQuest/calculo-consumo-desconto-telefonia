@@ -19,6 +19,9 @@ public class CalculadoraCredito {
                 double valorPorMinuto = Double.parseDouble(dadosLigacao[2].trim());
 
                 // TODO: Calcule o custo da ligação
+                if (i < n) {
+                  totalCredito += duracao * valorPorMinuto;
+                }
             }
 
             // Formata o resultado com duas casas decimais e imprime
